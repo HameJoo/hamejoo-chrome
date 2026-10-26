@@ -42,7 +42,8 @@ cd hamejoo-chrome
 
 دانلود عمومی (در صورت انتشار روی سایت): [hamejoo.ir/app/hamejoo-chrome.zip](https://hamejoo.ir/app/hamejoo-chrome.zip)
 
-پس از انتشار در Chrome Web Store، لینک استور اینجا اضافه می‌شود.
+**نصب از Chrome Web Store:**  
+[همه‌جو — جستجوی آگهی](https://chromewebstore.google.com/detail/hhchlcjldhlccicaaeiifmfdbacedhoi)
 
 ---
 
@@ -86,6 +87,9 @@ scripts/pack.sh   ساخت zip برای انتشار
 ---
 
 ## English
+
+Install from the [Chrome Web Store](https://chromewebstore.google.com/detail/hhchlcjldhlccicaaeiifmfdbacedhoi).
+
 
 **HameJoo for Chrome** is the official browser extension for [HameJoo](https://hamejoo.ir), an Iranian classifieds & business search engine.
 
