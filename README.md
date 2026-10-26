@@ -29,7 +29,7 @@
 4. **Load unpacked** → ریشهٔ همین پروژه
 
 ```bash
-git clone https://github.com/sadrmanesh/hamejoo-chrome.git
+git clone https://github.com/HameJoo/hamejoo-chrome.git
 cd hamejoo-chrome
 ```
 
@@ -96,7 +96,7 @@ Install from the [Chrome Web Store](https://chromewebstore.google.com/detail/hhc
 Search from the toolbar popup, omnibox (`hj` + query), context menu, or `Alt+H`. Results open on `hamejoo.ir`. Manifest V3, minimal permissions, no third-party trackers, no remote code.
 
 ```bash
-git clone https://github.com/sadrmanesh/hamejoo-chrome.git
+git clone https://github.com/HameJoo/hamejoo-chrome.git
 # chrome://extensions → Load unpacked → this folder
 ```
 
