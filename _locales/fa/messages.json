@@ -1,0 +1,14 @@
+{
+  "extName": {
+    "message": "همه‌جو — جستجوی آگهی"
+  },
+  "extDescription": {
+    "message": "جستجوی سریع آگهی و کسب‌وکار در همه‌جو از نوار آدرس، منوی راست‌کلیک و پاپ‌آپ."
+  },
+  "contextSearch": {
+    "message": "جستجو در همه‌جو: «%s»"
+  },
+  "omniboxDescription": {
+    "message": "جستجو در همه‌جو"
+  }
+}

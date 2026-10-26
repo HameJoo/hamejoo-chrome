@@ -1,0 +1,7 @@
+.DS_Store
+dist/
+*.crx
+*.pem
+.venv/
+__pycache__/
+*.pyc
