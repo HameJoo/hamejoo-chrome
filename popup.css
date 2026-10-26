@@ -1,0 +1,169 @@
+:root {
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --ink: #0f172a;
+  --muted: #64748b;
+  --line: #e2e8f0;
+  --blue: #2563eb;
+  --blue-ink: #1d4ed8;
+  --focus: rgba(37, 99, 235, 0.35);
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b1220;
+    --card: #0f172a;
+    --ink: #e2e8f0;
+    --muted: #94a3b8;
+    --line: #1e293b;
+    --blue: #3b82f6;
+    --blue-ink: #93c5fd;
+    --focus: rgba(59, 130, 246, 0.45);
+    color-scheme: dark;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 320px;
+  font-family: "Vazirmatn", "Tahoma", "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  padding: 12px;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.logo {
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.titles {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.titles strong {
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.titles span {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.form {
+  display: flex;
+  gap: 8px;
+  align-items: stretch;
+}
+
+.form input {
+  flex: 1;
+  min-width: 0;
+  height: 40px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 0 12px;
+  font: inherit;
+  font-size: 13px;
+  background: var(--card);
+  color: var(--ink);
+  outline: none;
+}
+
+.form input:focus {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px var(--focus);
+}
+
+.form button {
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  padding: 0 14px;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  background: var(--blue);
+  color: #fff;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.form button:hover {
+  filter: brightness(1.05);
+}
+
+.form button:active {
+  transform: translateY(1px);
+}
+
+.hint {
+  margin: 10px 2px 0;
+  font-size: 11px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+kbd {
+  display: inline-block;
+  padding: 0 5px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--card);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 10px;
+  direction: ltr;
+}
+
+.links {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+  justify-content: center;
+}
+
+.links a {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--blue-ink);
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}

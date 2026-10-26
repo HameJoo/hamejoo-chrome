@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>همه‌جو</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header class="head">
+      <img class="logo" src="icons/icon-48.png" width="28" height="28" alt="" />
+      <div class="titles">
+        <strong>همه‌جو</strong>
+        <span>جستجوی آگهی و کسب‌وکار</span>
+      </div>
+    </header>
+
+    <form id="search-form" class="form" autocomplete="off">
+      <label class="sr-only" for="q">عبارت جستجو</label>
+      <input
+        id="q"
+        name="q"
+        type="search"
+        enterkeyhint="search"
+        placeholder="مثلاً آیفون ۱۳، پژو ۲۰۶، اجاره تهران…"
+        maxlength="200"
+        autofocus
+      />
+      <button type="submit" id="go">جستجو</button>
+    </form>
+
+    <p class="hint">
+      میانبر: در نوار آدرس بنویسید
+      <kbd>hj</kbd>
+      سپس فاصله و عبارت را تایپ کنید ·
+      <kbd>Alt</kbd>+<kbd>H</kbd>
+    </p>
+
+    <nav class="links">
+      <a href="https://hamejoo.ir/" target="_blank" rel="noopener">خانه</a>
+      <a href="https://hamejoo.ir/download" target="_blank" rel="noopener">اپ اندروید</a>
+      <a href="https://hamejoo.ir/privacy" target="_blank" rel="noopener">حریم خصوصی</a>
+    </nav>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

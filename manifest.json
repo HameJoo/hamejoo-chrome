@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_extName__",
+  "short_name": "همه‌جو",
+  "description": "__MSG_extDescription__",
+  "version": "1.0.0",
+  "version_name": "1.0.0",
+  "homepage_url": "https://hamejoo.ir",
+  "default_locale": "fa",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "action": {
+    "default_title": "جستجو در همه‌جو",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "omnibox": {
+    "keyword": "hj"
+  },
+  "permissions": ["contextMenus", "storage"],
+  "host_permissions": ["https://hamejoo.ir/*"],
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Alt+H",
+        "mac": "Alt+H"
+      },
+      "description": "باز کردن جستجوی همه‌جو"
+    }
+  }
+}
