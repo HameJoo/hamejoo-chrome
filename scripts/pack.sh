@@ -18,6 +18,7 @@ rsync -a \
   --exclude '.git/' \
   --exclude '.gitignore' \
   --exclude '.DS_Store' \
+  --exclude 'docs/' \
   --exclude 'icons/icon-512.png' \
   "$ROOT/" "$STAGE/hamejoo-chrome/"
 
