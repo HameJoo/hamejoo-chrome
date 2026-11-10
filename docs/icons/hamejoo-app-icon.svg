@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0.15" y1="0" x2="0.85" y2="1">
+      <stop offset="0%" stop-color="#60A5FA"/>
+      <stop offset="50%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#1E3A8A"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff" stop-opacity=".24"/>
+      <stop offset="38%" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="45%">
+      <stop offset="0%" stop-color="#BFDBFE" stop-opacity=".28"/>
+      <stop offset="100%" stop-color="#BFDBFE" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sweep" gradientUnits="userSpaceOnUse" x1="512" y1="512" x2="740" y2="280">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity=".42"/>
+      <stop offset="45%" stop-color="#93C5FD" stop-opacity=".20"/>
+      <stop offset="100%" stop-color="#93C5FD" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="cutTL" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#93C5FD"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    <linearGradient id="cutBR" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#60A5FA"/>
+      <stop offset="100%" stop-color="#1E40AF"/>
+    </linearGradient>
+    <linearGradient id="cutTop" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#BFDBFE"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+    <linearGradient id="cutBot" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#1E3A8A"/>
+    </linearGradient>
+    <clipPath id="lens"><circle cx="512" cy="512" r="208"/></clipPath>
+    <clipPath id="tile"><rect width="1024" height="1024" rx="248"/></clipPath>
+  </defs>
+  <g clip-path="url(#tile)">
+  <rect width="1024" height="1024" rx="248" fill="url(#bg)"/>
+  <rect width="1024" height="440" fill="url(#gloss)"/>
+  <circle cx="512" cy="512" r="360" fill="url(#coreGlow)"/>
+  <g fill="none" stroke="#DBEAFE" stroke-linecap="round">
+    <circle cx="512" cy="512" r="268" stroke-width="10" stroke-opacity=".28"/>
+    <circle cx="512" cy="512" r="318" stroke-width="9" stroke-opacity=".20"/>
+    <circle cx="512" cy="512" r="368" stroke-width="8" stroke-opacity=".14"/>
+    <circle cx="512" cy="512" r="418" stroke-width="7" stroke-opacity=".10"/>
+    <circle cx="512" cy="512" r="468" stroke-width="6" stroke-opacity=".07"/>
+  </g>
+  <g fill="#EFF6FF">
+    <circle cx="512" cy="44" r="12" opacity=".9"/>
+    <circle cx="860" cy="220" r="11" opacity=".85"/>
+    <circle cx="164" cy="220" r="11" opacity=".85"/>
+    <circle cx="90" cy="560" r="10" opacity=".75"/>
+    <circle cx="930" cy="560" r="10" opacity=".75"/>
+    <circle cx="250" cy="860" r="9" opacity=".65"/>
+  </g>
+  <g stroke="#93C5FD" stroke-width="3.5" stroke-opacity=".45" fill="none">
+    <path d="M512 56 L512 100"/><path d="M848 232 L790 290"/><path d="M176 232 L234 290"/>
+    <path d="M102 556 L160 540"/><path d="M918 556 L860 540"/><path d="M262 848 L310 790"/>
+  </g>
+  <g clip-path="url(#lens)">
+    <path fill="url(#sweep)" d="M512 512 L512 304 A208 208 0 0 1 690 400 Z"/>
+    <path fill="url(#sweep)" opacity=".65" d="M512 512 L690 400 A208 208 0 0 1 700 560 Z"/>
+  </g>
+  <g fill="none" stroke="#FFFFFF" stroke-width="66" stroke-linecap="round">
+    <circle cx="512" cy="512" r="220"/>
+    <path d="M678 678 L826 826"/>
+  </g>
+  
+  <path fill="#FFFFFF" d="
+    M400 512 C440 455 476 432 512 432 C548 432 584 455 624 512
+    C584 569 548 592 512 592 C476 592 440 569 400 512 Z"/>
+  <path fill="#DBEAFE" d="M512 460 L512 512 L464 512 Z"/>
+  <path fill="#93C5FD" d="M512 460 L560 512 L512 512 Z"/>
+  <path fill="#3B82F6" d="M464 512 L512 512 L512 564 Z"/>
+  <path fill="#1E40AF" d="M512 512 L560 512 L512 564 Z"/>
+  </g>
+</svg>
